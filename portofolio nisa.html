@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Website</title>
+  <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+   
+  <!-- Header Section -->
+  <header>
+    <nav>
+      <a href="#" class="logo">Portfolio.</a>
+      <ul class="navbar">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home" class="home-section">
+    <div class="content">
+      <h1>Hello, It's Me</h1>
+      <h2>Hairun Nisa</h2>
+      <p>And I'm a <span class="typing">Acrylic Owners in Tanjung Jabung Barat City</span></p>
+      <a href="#" class="btn">Download CV</a>
+    </div>
+    <div class="image">
+      <img src="nisa.jpg.jpeg"alt="Hairun Nisa">
+    </div>
+  </section>
+  <style>
+  .{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    background-color: #121212;
+    color: #f5f5f5;
+    line-height: 1.6;
+  }
+  
+  /* Header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #222;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  header .logo {
+    color: #00d9ff;
+    font-size: 24px;
+    text-transform: uppercase;
+    style="border-radius: 5px; width: 50px;
+  }
+  
+  header .navbar li {
+    display: inline;
+    margin: 0 15px;
+  }
+  
+  header .navbar a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  header .navbar a:hover {
+    color: #00d9ff;
+  }
+  
+  /* Home Section */
+  .home-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    padding: 0 10%;
+  }
+  
+  .home-section .content h1 {
+    font-size: 48px;
+    color: #00d9ff;
+  }
+  
+  .home-section .content h2 {
+    font-size: 32px;
+  }
+  
+  .home-section .content .btn {
+    margin-top: 20px;
+    background: #00d9ff;
+    color: #222;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  .home-section .content .btn:hover {
+    background: white;
+  }
+  
+  /* Gallery Section */
+  .gallery img {
+    max-width: 300px;
+    border-radius: 10px;
+    margin: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .gallery img:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    background: #222;
+    padding: 10px;
+    color: white;
+  }
+  .whatsapp-btn img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+</style>
+<section id="about">
+    <h2>About Me</h2>
+    <p>I am a graduate of Information Systems at Nurdin Hamzah University with a GPA of 4.00. 
+      I am a highly motivated, integrity-oriented, and purposeful person. 
+      During my college years, I actively participated in various external and internal organizations 
+      that honed my soft skills, such as problem solving and working in a team. 
+      I am very interested in Public Relations, Marketing Communications, and Community Management..</p>
+  </section>
+  
+  <section id="pendidikan" class="section">
+    <h2>Riwayat Pendidikan</h2>
+    <div class="card">
+    <ul>
+        <ul>
+           <li><strong>2026- 2028</strong>: S2 Sarjana Sistem Informasi,Universitas Indonesia</li>
+            <li><strong>2022 - 2026</strong>: SI Sarjana Sistem Informasi, Universitas Nurdin Hamzah</li>
+            <li><strong>2020 - 2022</strong>: MA Riyadhull Jannah, Jurusan IPA</li>
+          </div>
+        </ul>
+    </ul>
+</section>
+<section id="kerja">
+    <div class="card">
+        <h2>Riwayat Kerja</h2>
+        <ul>
+            <li><strong>2027- Sekarang</strong>: Kepala Sekolah SMK 1 Muaro Jambi</li>
+            <li><strong>2026- 2027 </strong>: Software Developer, PT Teknologi ABC</li>
+            <li><strong>2025 - 2026</strong>: Magang di Departemen IT, PT Solusi Digital</li>
+             <li><strong>2024 - 2025</strong>: Magang di Departemen Pendidikan Kota Jambi </li>
+            <li><strong>2023 - 2024</strong>: Fasilitator pmr, SMP 8 Kota Jambi</li>
+            <li><strong>2022 - 2023</strong>: Magang MTS Hidayatul Hikmah, Guru PJOK</li>
+        </ul>
+    </div>
+</section>
+
+<!-- Riwayat Organisasi -->
+<section id="organisasi" class="section">
+    <h2>Riwayat Organisasi</h2>
+    <ul>
+         <li><strong>2026 - 2027</strong>: Ketua Ikatan Bujang Gadis Kabupaten Tanjung Jabung Barat</li>
+             <li><strong>2025 - 2026</strong>: Ketua Umum Organisasi Pengembangan Karir</li>
+            <li><strong>2022 - 2025</strong>: Ketua Umum Organisasi KSR PMi, Unit Universitas Nurdin Hamzah</li>
+            <li><strong>2022 - 2023</strong>: Sekretaris Umum Organisasisi KSR PMi, Unit Universitas Nurdin Hamzah</li>
+            <li><strong>2019 - 2022</strong>: Anggota Organisasi PMR, MA Riyadhul Jannah</li>
+            <li><strong>2019 - 2022</strong>: Anggota Osis, MA Riyadhul Jannah</li>
+    </ul>
+</section>
+
+<!-- Riwayat Sertifikasi Keahlian -->
+<section id="sertifikasi" class="section">
+    <h2>Riwayat Sertifikasi Keahlian</h2>
+    <ul>
+        <li><strong>2027</strong>: Sertifikasi Google IT Support, Google</li>
+            <li><strong>2026</strong>: Sertifikasi Temu Bhakti KSR PMI Perguruan Tinngi Se-Indonesia</li>
+            <li><strong>2025</strong>: Sertifikasi Juri Perolongan Pertama , PGRI 2  Kota Jambi</li>
+             <li><strong>2023</strong>: Sertifikasi Panitia AKARSI Se- Provinsi Jambi</li>
+             <li><strong>2023</strong>: Sertifikasi Relawan Bencana, PMI Kota Jambi</li>
+            <li><strong>2022</strong>: Sertifikasi Pengembangan Aplikasi Mobile</li>
+             <li><strong>2019</strong>: Sertifikasi Global Intermedia Komputer</li>
+
+    </ul>
+</section>
+
+<!-- Riwayat Karya Tulis / Produk / Lainnya -->
+<section id="karya" class="section">
+    <h2>Riwayat Karya</h2>
+    <ul>
+        <li><strong>2024</strong>: "Masa Depan Teknologi Blockchain dalam Sistem Keuangan", Jurnal Teknologi Informasi</li>
+            <li><strong>2023</strong>: "Tren Pengembangan Aplikasi Mobile", Artikel Blog Teknologi ABC</li>
+    </ul>
+</section>
+<section id="contact">
+  <h2>Contact Me</h2>
+  <form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" required></textarea>
+    
+    <button type="submit">Send</button>
+  </form>
+</section>
+</main>
+
+<footer class="footer">
+<p>&copy; 2024 Hairun Nisa. Semua Hak Dilindungi.</p>
+</footer>
+</body>
+</html>
